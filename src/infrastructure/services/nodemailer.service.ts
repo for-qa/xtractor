@@ -18,7 +18,7 @@ export class NodemailerService implements INotificationService {
       recipientEmail?: string;
     },
   ) {
-    this.logoPath = join(process.cwd(), "assets", "logo.png");
+    this.logoPath = join(process.cwd(), "assets", "logo.svg");
   }
 
   updateConfig(config: EmailConfig) {

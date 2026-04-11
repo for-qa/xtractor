@@ -70,7 +70,7 @@ export class ProjectController {
     }
     try {
       if (!existsSync(filePath)) {
-        if (url === "/assets/logo.png" || url.startsWith("/assets/logo")) {
+        if (url === "/assets/logo.svg" || url.startsWith("/assets/logo")) {
           if (existsSync(assetsDir)) {
             const files = readdirSync(assetsDir);
             const png = files.find((f) => f.toLowerCase().endsWith(".png"));

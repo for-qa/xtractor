@@ -18,7 +18,7 @@ export function loadStaticAssets(root: string) {
   try {
     // Prefer SVG (crisp at all sizes), fall back to PNG
     const svgPath = join(root, "assets", "logo.svg");
-    const pngPath = join(root, "assets", "logo.png");
+    const pngPath = join(root, "assets", "logo.svg");
     if (existsSync(svgPath)) {
       const buffer = readFileSync(svgPath);
       logo = `data:image/svg+xml;base64,${buffer.toString("base64")}`;

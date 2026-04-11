@@ -189,7 +189,7 @@ export class NodemailerEmailService implements IEmailService {
     });
 
     const subject = `❌ Extraction Failed: ${params.brand} - ${params.purchaser || "N/A"}`;
-    const LOGO_PATH = join(process.cwd(), "assets", "logo.png");
+    const LOGO_PATH = join(process.cwd(), "assets", "logo.svg");
 
     const html = `
 <!DOCTYPE html>
@@ -261,7 +261,7 @@ export class NodemailerEmailService implements IEmailService {
         subject,
         html,
         attachments: existsSync(LOGO_PATH)
-          ? [{ filename: "logo.png", path: LOGO_PATH, cid: "logo" }]
+          ? [{ filename: "logo.svg", path: LOGO_PATH, cid: "logo" }]
           : [],
       });
 

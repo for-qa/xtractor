@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 44" width="150" height="44">
+  <g transform="translate(4, 5) scale(1.2)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer Hexagon / Cube -->
+    <path d="M13.5 1.5L2 7.5V20.5L13.5 26.5L25 20.5V7.5Z" fill="none" stroke="#10B981" stroke-width="2.2" />
+    <path d="M2 7.5L13.5 13.5L25 7.5" fill="none" stroke="#10B981" stroke-width="2.2" />
+    <path d="M13.5 26.5V13.5" fill="none" stroke="#10B981" stroke-width="2.2" />
+
+    <!-- Inner Cube to create tesseract effect -->
+    <path d="M13.5 7L8.5 9.5V15.5L13.5 18L18.5 15.5V9.5Z" fill="none" stroke="#0F172A" stroke-width="1.8" opacity="0.9" />
+    <path d="M8.5 9.5L13.5 12L18.5 9.5" fill="none" stroke="#0F172A" stroke-width="1.8" opacity="0.9" />
+    <path d="M13.5 18V12" fill="none" stroke="#0F172A" stroke-width="1.8" opacity="0.9" />
+
+    <!-- Connecting lines -->
+    <path d="M13.5 1.5V7 M2 7.5L8.5 9.5 M25 7.5L18.5 9.5 M2 20.5L8.5 15.5 M25 20.5L18.5 15.5 M13.5 26.5V18" stroke="#10B981" stroke-width="1.5" opacity="0.8" />
+    
+    <!-- Core dot to represent data extraction -->
+    <circle cx="13.5" cy="12" r="1.5" fill="#10B981" />
+  </g>
+  <text x="40" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="800" fill="#0F172A" letter-spacing="0.5">Piperact</text>
+  <!-- Green dot after the text -->
+  <circle cx="140" cy="24" r="3.5" fill="#10B981" />
+</svg>

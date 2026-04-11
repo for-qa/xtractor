@@ -21,7 +21,7 @@ const path = require('path');
     await page.goto(item.url, { waitUntil: 'networkidle' });
     
     // Explicitly wait an extra 2 seconds for any JS animations (like loaders fading out or charts rendering) to finish
-    await page.waitForTimeout(2000); 
+    await page.waitForTimeout(4000); 
 
     console.log(`Taking screenshot for ${item.path}...`);
     await page.screenshot({ path: path.join(__dirname, item.path), fullPage: true });

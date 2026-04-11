@@ -70,7 +70,7 @@ export const ExtractionDataModal = () => `
     <div class="modal" style="width: 1000px; height: 85vh; max-height: 95vh; display: flex; flex-direction: column;" role="dialog" aria-modal="true" aria-labelledby="extraction-data-modal-title">
       <div class="report-header">
         <div class="report-header-left">
-          <img src="/assets/logo.png" alt="logo" class="logo" />
+          <img src="/assets/logo.svg" alt="logo" class="logo" />
           <h1 class="report-header-title" id="extraction-data-modal-title">Data Explorer</h1>
         </div>
         <button type="button" id="extraction-data-modal-close-icon" class="modal-close-icon" style="margin-left: 1rem" aria-label="Close dialog">&#10005;</button>

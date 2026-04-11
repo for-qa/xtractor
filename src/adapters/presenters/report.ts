@@ -1103,13 +1103,13 @@ export function htmlReportFromHistory(
     .join("");
   let logoDataUri = "";
   try {
-    const logoRelPath = join(process.cwd(), "assets", "logo.png");
+    const logoRelPath = join(process.cwd(), "assets", "logo.svg");
     if (existsSync(logoRelPath)) {
       const logoBuffer = readFileSync(logoRelPath);
       logoDataUri = `data:image/png;base64,${logoBuffer.toString("base64")}`;
     }
   } catch (e) {
-    logoDataUri = "../../assets/logo.png";
+    logoDataUri = "../../assets/logo.svg";
   }
 
   let faviconDataUri = "";
