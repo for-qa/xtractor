@@ -1,12 +1,12 @@
-# IntelliExtract Runner
+# Piperact
 
-[![CI](https://github.com/for-qa/intelliextract-runner/actions/workflows/ci.yml/badge.svg)](https://github.com/for-qa/intelliextract-runner/actions/workflows/ci.yml)
+[![CI](https://github.com/revolution-qa/piperact/actions/workflows/ci.yml/badge.svg)](https://github.com/revolution-qa/piperact/actions/workflows/ci.yml)
 
 **A Professional, High-Performance Extraction Orchestrator & Dashboard**
 
-IntelliExtract Runner is a high-performance TypeScript application designed to orchestrate large-scale data extraction from the IntelliExtract Spreadsheet API. Built on **Clean Architecture** principles, it provides a robust CLI and a stunning Web Dashboard for managing S3 synchronization, batch extraction, scheduling, and analytics.
+Piperact is a high-performance TypeScript application designed to orchestrate large-scale data extraction. Built on **Clean Architecture** principles, it provides a robust CLI and a stunning Web Dashboard for managing S3 synchronization, batch extraction, scheduling, and analytics.
 
-![IntelliExtract Dashboard](docs/dashboard.png)
+![Piperact Dashboard](docs/dashboard.png)
 
 <details>
 <summary><b>✨ View More Dashboard Features (Inventory, Analytics, Data Explorer)</b></summary>
@@ -107,9 +107,9 @@ cp config/config.example.yaml config/config.yaml
 
 Edit `.env` with your API credentials:
 
-- `INTELLIEXTRACT_ACCESS_KEY`
-- `INTELLIEXTRACT_SECRET_MESSAGE`
-- `INTELLIEXTRACT_SIGNATURE`
+- `PIPERACT_ACCESS_KEY`
+- `PIPERACT_SECRET_MESSAGE`
+- `PIPERACT_SIGNATURE`
 - `S3_BUCKET` & `S3_TENANT_PURCHASERS` (for sync)
 
 ---

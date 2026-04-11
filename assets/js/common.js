@@ -1,7 +1,7 @@
 import { AppIcons } from "./icons.js";
 
 /**
- * Common Utilities and Shared Logic for IntelliExtract
+ * Common Utilities and Shared Logic for Piperact
  */
 
 // --- Global Alert System ---
@@ -361,7 +361,7 @@ document.addEventListener("click", function (e) {
   if (!isSamePage) {
     const performNavigation = () => {
       // Set bypass flag so beforeunload doesn't prompt again for this navigation
-      document.dispatchEvent(new CustomEvent("intelliextract:bypassunload"));
+      document.dispatchEvent(new CustomEvent("piperact:bypassunload"));
       e.preventDefault();
       var href = t.href;
       AppUtils.showLoader();
@@ -377,7 +377,7 @@ document.addEventListener("click", function (e) {
     // The dashboard listens for this event and writes back hasActiveRuns to detail.
     const activeRunDetail = { hasActiveRuns: false };
     document.dispatchEvent(
-      new CustomEvent("intelliextract:checkactiveruns", {
+      new CustomEvent("piperact:checkactiveruns", {
         detail: activeRunDetail,
       }),
     );

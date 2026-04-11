@@ -1,8 +1,8 @@
-# Case Study: IntelliExtract Runner
+# Case Study: Piperact
 
 ## Project Overview
 
-**IntelliExtract Runner** is a production-grade TypeScript application built to orchestrate high-throughput data extraction from a spreadsheet processing API. It handles S3 sync, parallel extraction, resumable checkpointing, scheduling, analytics, and email reporting — all exposed through both a CLI and a web dashboard.
+**Piperact** is a production-grade TypeScript application built to orchestrate high-throughput data extraction from a spreadsheet processing API. It handles S3 sync, parallel extraction, resumable checkpointing, scheduling, analytics, and email reporting — all exposed through both a CLI and a web dashboard.
 
 This project was **100% built using AI agent orchestration** (Gemini/Claude agents), demonstrating how AI-driven development can produce enterprise-quality software with clean architecture, full type safety, and production resilience patterns.
 

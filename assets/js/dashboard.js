@@ -2,7 +2,7 @@ import { AppUtils, showAppAlert } from "./common.js";
 import { AppIcons } from "./icons.js";
 
 /**
- * Dashboard Logic for IntelliExtract
+ * Dashboard Logic for Piperact
  */
 // --- Data State ---
 let BRAND_PURCHASERS = {};
@@ -12,9 +12,9 @@ let SELECTED_PURCHASERS = [];
 let CURRENT_ACTIVE_RUNS = [];
 let STAGING_COUNT = null;
 let IS_UNLOADING = false;
-/** Set to true by common.js via 'intelliextract:bypassunload' event when user confirmed navigation via the app modal. */
+/** Set to true by common.js via 'piperact:bypassunload' event when user confirmed navigation via the app modal. */
 let BYPASS_UNLOAD_CHECK = false;
-document.addEventListener("intelliextract:bypassunload", () => {
+document.addEventListener("piperact:bypassunload", () => {
   BYPASS_UNLOAD_CHECK = true;
 });
 
@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Decouple dashboard ↔ common.js communication via custom DOM events.
-  // common.js dispatches 'intelliextract:checkactiveruns' and reads e.detail.hasActiveRuns.
-  document.addEventListener("intelliextract:checkactiveruns", (e) => {
+  // common.js dispatches 'piperact:checkactiveruns' and reads e.detail.hasActiveRuns.
+  document.addEventListener("piperact:checkactiveruns", (e) => {
     const hasActive =
       CURRENT_ACTIVE_RUNS.filter((r) => r.origin === "manual").length > 0;
     // Write back into the event detail so the dispatcher can read it synchronously

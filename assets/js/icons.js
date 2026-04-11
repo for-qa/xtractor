@@ -1,5 +1,5 @@
 /**
- * Shared SVG Icons for IntelliExtract
+ * Shared SVG Icons for Piperact
  * Standardized to 16x16 view with 2.2px stroke for premium feel.
  */
 export const AppIcons = {

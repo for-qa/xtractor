@@ -129,7 +129,7 @@ export function getCaseCommands(
     N3: (p, runOpts) => syncArgs(p, runOpts ?? null, root),
     E1: (p, runOpts) => runArgs(p, ["--no-sync"], runOpts ?? null, root),
     E2: (p) => {
-      const dbPath = join(root, "output", "records", "intelliextract.db");
+      const dbPath = join(root, "output", "records", "piperact.db");
       if (existsSync(dbPath)) {
         try {
           copyFileSync(dbPath, dbPath + ".bak");

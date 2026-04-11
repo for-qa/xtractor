@@ -151,7 +151,7 @@ export class DashboardController {
     });
 
     return PageLayout({
-      title: "IntelliExtract Runner",
+      title: "Piperact",
       content: DashboardView.render({
         brands: brands,
         purchasers: allPurchasers,

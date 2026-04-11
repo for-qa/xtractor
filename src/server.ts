@@ -28,7 +28,7 @@ import { Router } from "./adapters/router.js";
 
 // Infrastructure Services
 import { AwsS3Service } from "./infrastructure/services/aws-s3.service.js";
-import { IntelliExtractService } from "./infrastructure/services/intelli-extract.service.js";
+import { PiperactService } from "./infrastructure/services/piperact.service.js";
 import { NodemailerService } from "./infrastructure/services/nodemailer.service.js";
 import { RunStatusStore } from "./infrastructure/services/run-status-store.service.js";
 import { ConfigService } from "./infrastructure/services/config.service.js";
@@ -60,7 +60,7 @@ const REPORTS_DIR = join(ROOT, "output", "reports");
 const EXTRACTIONS_DIR = join(ROOT, "output", "extractions");
 const STAGING_DIR = join(ROOT, "output", "staging");
 const _rawExtractionRecordPath =
-  appConfig.run.databasePath || join(ROOT, "output", "intelliextract.db");
+  appConfig.run.databasePath || join(ROOT, "output", "piperact.db");
 // Always resolve relative to ROOT so the path is absolute regardless of cwd
 const DATABASE_PATH = resolve(ROOT, _rawExtractionRecordPath);
 
@@ -92,7 +92,7 @@ const discoverFilesUseCase = new DiscoverFilesUseCase();
 const reportingUseCase = new ReportingUseCase(recordRepo);
 // 4. Initialize Services
 const s3Service = new AwsS3Service(appConfig.s3.region, syncRepo);
-const extractionService = new IntelliExtractService(appConfig);
+const extractionService = new PiperactService(appConfig);
 const runStatusStore = new RunStatusStore(new Map());
 const notificationService = new NodemailerService(
   await recordRepo.getEmailConfig(),
@@ -207,7 +207,7 @@ const router = new Router(
 const httpServer = createServer(async (req, res) => {
   await router.handleRequest(req, res);
 }).listen(PORT, () => {
-  console.log(`IntelliExtract app: http://localhost:${PORT}/`);
+  console.log(`Piperact app: http://localhost:${PORT}/`);
   cronManager.bootstrap();
 });
 

@@ -1,10 +1,10 @@
-# IntelliExtract Runner - Configuration (example)
+# Piperact Runner - Configuration (example)
 # 1. Copy this file to config.yaml:  cp config.example.yaml config.yaml
-# 2. Set environment variables (see .env.example or README): INTELLIEXTRACT_BASE_URL, etc.
+# 2. Set environment variables (see .env.example or README): PIPERACT_BASE_URL, etc.
 # 3. Edit buckets / paths below if needed.
 
 api:
-  baseUrl: ${INTELLIEXTRACT_BASE_URL}
+  baseUrl: ${PIPERACT_BASE_URL}
   timeoutMs: 60000
 
 # S3: buckets are built from .env S3_BUCKET + S3_TENANT_PURCHASERS (single bucket, tenant/purchaser folders).
@@ -24,7 +24,7 @@ s3:
 run:
   concurrency: 5
   requestsPerSecond: 10
-  databasePath: ./output/intelliextract.db
+  databasePath: ./output/piperact.db
   skipCompleted: true
   # Optional: API retry settings (for timeouts/5xx/429). Defaults: maxRetries=0, retryBackoffMs=500.
   maxRetries: 2

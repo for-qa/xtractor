@@ -508,7 +508,7 @@ export function buildSummary(metrics: RunMetrics): ExecutiveSummary {
   const end = new Date(metrics.finishedAt).getTime();
   const runDurationSeconds = (end - start) / 1000;
   return {
-    title: "IntelliExtract Operation – Executive Summary",
+    title: "Piperact Operation – Executive Summary",
     generatedAt: new Date().toISOString(),
     metrics,
     runDurationSeconds,

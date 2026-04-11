@@ -173,7 +173,7 @@ class AppSidebar extends HTMLElement {
                     </div>
                     <div class="sidebar-header">
                         <a href="/">
-                            <img src="${logoUri}" alt="IntelliExtract Runner" class="sidebar-logo">
+                            <img src="${logoUri}" alt="Piperact" class="sidebar-logo">
                             <img src="${smallLogoUri}" alt="ir" class="logo-small">
                         </a>
                     </div>

@@ -1,5 +1,5 @@
 /**
- * Shared types for IntelliExtract test stub
+ * Shared types for Piperact extraction runner
  */
 
 export interface RunParams {

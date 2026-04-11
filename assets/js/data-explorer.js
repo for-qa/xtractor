@@ -506,7 +506,7 @@ window.exportBatch = async function (type) {
       body: JSON.stringify({
         files,
         zipName:
-          "intelliextract_" +
+          "piperact_" +
           type +
           "_" +
           new Date().toISOString().split("T")[0],
@@ -517,7 +517,7 @@ window.exportBatch = async function (type) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "intelliextract_" + type + "_" + new Date().getTime() + ".zip";
+    a.download = "piperact_" + type + "_" + new Date().getTime() + ".zip";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
