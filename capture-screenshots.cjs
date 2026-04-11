@@ -12,7 +12,7 @@ const path = require('path');
     { url: 'http://localhost:8105/', path: 'docs/dashboard.png' },
     { url: 'http://localhost:8105/inventory', path: 'docs/inventory.png' },
     { url: 'http://localhost:8105/explorer', path: 'docs/data_explorer.png' },
-    { url: 'http://localhost:8105/run-summary', path: 'docs/run_summary.png' }
+    { url: 'http://localhost:8105/summary', path: 'docs/run_summary.png' }
   ];
 
   for (const item of urls) {
