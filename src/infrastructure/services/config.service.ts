@@ -45,8 +45,8 @@ export class ConfigService implements IConfigService {
     const config = substitute(parsed) as Config;
 
     // Apply environment overrides (following legacy logic)
-    if (process.env.PIPERACT_BASE_URL)
-      config.api.baseUrl = process.env.PIPERACT_BASE_URL;
+    if (process.env.Xtractor_BASE_URL)
+      config.api.baseUrl = process.env.Xtractor_BASE_URL;
 
     // S3 Overrides from ENV
     const envBucket = process.env.S3_BUCKET?.trim();
@@ -93,3 +93,5 @@ export class ConfigService implements IConfigService {
     return this.config.report;
   }
 }
+
+

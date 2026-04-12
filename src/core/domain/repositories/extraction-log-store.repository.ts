@@ -17,3 +17,5 @@ export interface IExtractionLogStore {
   saveLog(entry: LogEntry): Promise<void>;
   getLogsForRun(runId: string): Promise<LogEntry[]>;
 }
+
+

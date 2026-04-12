@@ -33,3 +33,5 @@ export class FileMetadataService {
     return { brand, purchaser };
   }
 }
+
+

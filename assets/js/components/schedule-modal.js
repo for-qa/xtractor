@@ -778,3 +778,5 @@ function formatCronWithTime(cron) {
 
 // Export to global scope
 window.initScheduleModal = initScheduleModal;
+
+

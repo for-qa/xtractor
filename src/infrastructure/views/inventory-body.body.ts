@@ -110,3 +110,5 @@ export function InventoryBody(props: InventoryBodyProps) {
   </main>
   `;
 }
+
+

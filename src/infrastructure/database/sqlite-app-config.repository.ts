@@ -31,3 +31,5 @@ export class SqliteAppConfigRepository implements IAppConfigStore {
     await this.setMeta("email_config", JSON.stringify(config));
   }
 }
+
+

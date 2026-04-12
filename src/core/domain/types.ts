@@ -1,5 +1,5 @@
 /**
- * Shared types for Piperact extraction runner
+ * Shared types for Xtractor extraction runner
  */
 
 export interface RunParams {
@@ -302,3 +302,5 @@ export interface InventoryDataDTO {
     totalSizeStr: string;
   };
 }
+
+

@@ -8,3 +8,5 @@ export interface INotificationService {
   ): Promise<void>;
   updateConfig(config: EmailConfig): void;
 }
+
+

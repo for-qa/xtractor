@@ -343,7 +343,7 @@ window.exportBatch = async function () {
       body: JSON.stringify({
         files,
         zipName:
-          "piperact_inventory_" + new Date().toISOString().split("T")[0],
+          "Xtractor_inventory_" + new Date().toISOString().split("T")[0],
       }),
     });
     if (!response.ok) throw new Error("Export failed");
@@ -493,3 +493,5 @@ function updateCharts() {
     },
   });
 }
+
+

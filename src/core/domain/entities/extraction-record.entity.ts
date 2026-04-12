@@ -20,3 +20,5 @@ export interface ExtractionRecord {
   purchaser?: string;
   fullResponse?: unknown;
 }
+
+

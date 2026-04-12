@@ -34,3 +34,5 @@ export class ViewHelper {
       .replace(/"/g, "&quot;");
   }
 }
+
+

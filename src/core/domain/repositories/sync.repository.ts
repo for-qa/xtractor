@@ -17,3 +17,5 @@ export interface ISyncRepository {
   appendSyncHistory(entry: SyncHistoryEntry): Promise<void>;
   getSyncHistory(): Promise<SyncHistoryEntry[]>;
 }
+
+

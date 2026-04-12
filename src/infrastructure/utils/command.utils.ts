@@ -129,7 +129,7 @@ export function getCaseCommands(
     N3: (p, runOpts) => syncArgs(p, runOpts ?? null, root),
     E1: (p, runOpts) => runArgs(p, ["--no-sync"], runOpts ?? null, root),
     E2: (p) => {
-      const dbPath = join(root, "output", "records", "piperact.db");
+      const dbPath = join(root, "output", "records", "Xtractor.db");
       if (existsSync(dbPath)) {
         try {
           copyFileSync(dbPath, dbPath + ".bak");
@@ -150,3 +150,5 @@ export function getCaseCommands(
     E5: (p) => runArgs(p, ["--no-sync"], null, root),
   };
 }
+
+

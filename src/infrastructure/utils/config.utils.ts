@@ -18,3 +18,5 @@ export function getConfigPath() {
     process.env.CONFIG_PATH || resolve(process.cwd(), "config", "config.yaml")
   );
 }
+
+

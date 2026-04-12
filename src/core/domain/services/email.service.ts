@@ -25,3 +25,5 @@ export interface IEmailService {
   ): Promise<void>;
   sendFailureEmail(params: FailureDetail & { runId: string }): Promise<void>;
 }
+
+

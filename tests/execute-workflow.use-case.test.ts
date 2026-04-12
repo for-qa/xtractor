@@ -173,14 +173,14 @@ describe("ExecuteWorkflowUseCase", () => {
     expect(syncCall.buckets[0].bucket).toBe("custom-bucket");
   });
 
-  it("should default bucket to piperact-staging when not provided", async () => {
+  it("should default bucket to Xtractor-staging when not provided", async () => {
     const uc = makeUseCase();
     await uc.execute(
       { caseId: "P1", pairs: [{ tenant: "brand-a", purchaser: "buyer-1" }] },
       onUpdate,
     );
     const syncCall = mockSyncBrand.execute.mock.calls[0][0];
-    expect(syncCall.buckets[0].bucket).toBe("piperact-staging");
+    expect(syncCall.buckets[0].bucket).toBe("Xtractor-staging");
   });
 
   it("should log 'No files found' warning when P2 finds no files", async () => {
@@ -192,3 +192,5 @@ describe("ExecuteWorkflowUseCase", () => {
     expect(warnLog.message).toContain("No files found");
   });
 });
+
+

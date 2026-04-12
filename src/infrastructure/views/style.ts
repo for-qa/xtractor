@@ -475,3 +475,5 @@ export const commonStyles = `
     .view-report-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
     .view-report-btn span { white-space: nowrap; letter-spacing: 0.02em; }
 `;
+
+

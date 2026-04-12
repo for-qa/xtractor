@@ -47,3 +47,5 @@ export interface Config {
   logging: LoggingConfig;
   report: ReportConfig;
 }
+
+

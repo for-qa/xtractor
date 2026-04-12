@@ -12,3 +12,5 @@ export interface IEmailLogStore {
   saveEmailLog(entry: EmailLogEntry): Promise<void>;
   getEmailLogs(limit?: number): Promise<EmailLogEntry[]>;
 }
+
+

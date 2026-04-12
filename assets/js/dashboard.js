@@ -2,7 +2,7 @@ import { AppUtils, showAppAlert } from "./common.js";
 import { AppIcons } from "./icons.js";
 
 /**
- * Dashboard Logic for Piperact
+ * Dashboard Logic for Xtractor
  */
 // --- Data State ---
 let BRAND_PURCHASERS = {};
@@ -12,9 +12,9 @@ let SELECTED_PURCHASERS = [];
 let CURRENT_ACTIVE_RUNS = [];
 let STAGING_COUNT = null;
 let IS_UNLOADING = false;
-/** Set to true by common.js via 'piperact:bypassunload' event when user confirmed navigation via the app modal. */
+/** Set to true by common.js via 'Xtractor:bypassunload' event when user confirmed navigation via the app modal. */
 let BYPASS_UNLOAD_CHECK = false;
-document.addEventListener("piperact:bypassunload", () => {
+document.addEventListener("Xtractor:bypassunload", () => {
   BYPASS_UNLOAD_CHECK = true;
 });
 
@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Decouple dashboard ↔ common.js communication via custom DOM events.
-  // common.js dispatches 'piperact:checkactiveruns' and reads e.detail.hasActiveRuns.
-  document.addEventListener("piperact:checkactiveruns", (e) => {
+  // common.js dispatches 'Xtractor:checkactiveruns' and reads e.detail.hasActiveRuns.
+  document.addEventListener("Xtractor:checkactiveruns", (e) => {
     const hasActive =
       CURRENT_ACTIVE_RUNS.filter((r) => r.origin === "manual").length > 0;
     // Write back into the event detail so the dispatcher can read it synchronously
@@ -1781,3 +1781,5 @@ window.addEventListener("keydown", (e) => {
     window.hideReportOverlay();
   }
 });
+
+

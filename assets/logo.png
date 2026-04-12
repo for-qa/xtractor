@@ -8,5 +8,7 @@
     <circle cx="4" cy="23" r="2" fill="#2563EB" stroke="none" />
     <circle cx="28" cy="23" r="2" fill="#2563EB" stroke="none" />
   </g>
-  <text x="44" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Helvetica, sans-serif" font-size="22" font-weight="800" fill="#0f172a" letter-spacing="-0.3">Piperact</text>
+  <text x="44" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Helvetica, sans-serif" font-size="22" font-weight="800" fill="#0f172a" letter-spacing="-0.3">Xtractor</text>
 </svg>
+
+

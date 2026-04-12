@@ -94,3 +94,5 @@ export function initNotificationModal() {
 
 // Export to global scope
 window.initNotificationModal = initNotificationModal;
+
+

@@ -12,7 +12,7 @@ import {
 } from "../../core/domain/services/extraction.service.js";
 import { Config } from "../../core/domain/entities/config.entity.js";
 
-export class PiperactService implements IExtractionService {
+export class XtractorService implements IExtractionService {
   constructor(
     private appConfig: Config,
     private extractionsDir?: string,
@@ -179,3 +179,5 @@ export class PiperactService implements IExtractionService {
     return { result: last!, attempts: attempt };
   }
 }
+
+

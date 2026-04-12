@@ -8,3 +8,5 @@ export interface IConfigService {
   getLoggingConfig(): Config["logging"];
   getReportConfig(): Config["report"];
 }
+
+

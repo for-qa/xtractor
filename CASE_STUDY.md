@@ -1,8 +1,8 @@
-# Case Study: Piperact
+# Case Study: Xtractor
 
 ## Project Overview
 
-**Piperact** is a production-grade TypeScript application built to orchestrate high-throughput data extraction from a spreadsheet processing API. It handles S3 sync, parallel extraction, resumable checkpointing, scheduling, analytics, and email reporting — all exposed through both a CLI and a web dashboard.
+**Xtractor** is a production-grade TypeScript application built to orchestrate high-throughput data extraction from a spreadsheet processing API. It handles S3 sync, parallel extraction, resumable checkpointing, scheduling, analytics, and email reporting — all exposed through both a CLI and a web dashboard.
 
 This project was **100% built using AI agent orchestration** (Gemini/Claude agents), demonstrating how AI-driven development can produce enterprise-quality software with clean architecture, full type safety, and production resilience patterns.
 
@@ -153,3 +153,5 @@ This project was built end-to-end using AI agent orchestration:
 5. **Refinement** — Human-in-the-loop review identified edge cases (resume logic, rate limiting) that were iteratively fixed
 
 The result demonstrates that AI-assisted development can produce maintainable, production-quality code when paired with proper architectural guidance and human review.
+
+

@@ -1,7 +1,7 @@
 import { AppIcons } from "./icons.js";
 
 /**
- * Common Utilities and Shared Logic for Piperact
+ * Common Utilities and Shared Logic for Xtractor
  */
 
 // --- Global Alert System ---
@@ -361,7 +361,7 @@ document.addEventListener("click", function (e) {
   if (!isSamePage) {
     const performNavigation = () => {
       // Set bypass flag so beforeunload doesn't prompt again for this navigation
-      document.dispatchEvent(new CustomEvent("piperact:bypassunload"));
+      document.dispatchEvent(new CustomEvent("Xtractor:bypassunload"));
       e.preventDefault();
       var href = t.href;
       AppUtils.showLoader();
@@ -377,7 +377,7 @@ document.addEventListener("click", function (e) {
     // The dashboard listens for this event and writes back hasActiveRuns to detail.
     const activeRunDetail = { hasActiveRuns: false };
     document.dispatchEvent(
-      new CustomEvent("piperact:checkactiveruns", {
+      new CustomEvent("Xtractor:checkactiveruns", {
         detail: activeRunDetail,
       }),
     );
@@ -413,3 +413,5 @@ window.closeAppAlert = closeAppAlert;
 window.escapeHtml = AppUtils.esc;
 window.formatBrandName = AppUtils.formatBrandName;
 window.formatPurchaserName = AppUtils.formatPurchaserName;
+
+

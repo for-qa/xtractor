@@ -1,12 +1,12 @@
-# Piperact
+# Xtractor
 
-[![CI](https://github.com/revolution-qa/piperact/actions/workflows/ci.yml/badge.svg)](https://github.com/revolution-qa/piperact/actions/workflows/ci.yml)
+[![CI](https://github.com/for-qa/xtractor/actions/workflows/ci.yml/badge.svg)](https://github.com/for-qa/xtractor/actions/workflows/ci.yml)
 
 **A Professional, High-Performance Extraction Orchestrator & Dashboard**
 
-Piperact is a high-performance TypeScript application designed to orchestrate large-scale data extraction. Built on **Clean Architecture** principles, it provides a robust CLI and a stunning Web Dashboard for managing S3 synchronization, batch extraction, scheduling, and analytics.
+Xtractor is a high-performance TypeScript application designed to orchestrate large-scale data extraction. Built on **Clean Architecture** principles, it provides a robust CLI and a stunning Web Dashboard for managing S3 synchronization, batch extraction, scheduling, and analytics.
 
-![Piperact Dashboard](docs/dashboard.png)
+![Xtractor Dashboard](docs/dashboard.png)
 
 <details>
 <summary><b>✨ View More Dashboard Features (Inventory, Analytics, Data Explorer)</b></summary>
@@ -107,9 +107,9 @@ cp config/config.example.yaml config/config.yaml
 
 Edit `.env` with your API credentials:
 
-- `PIPERACT_ACCESS_KEY`
-- `PIPERACT_SECRET_MESSAGE`
-- `PIPERACT_SIGNATURE`
+- `Xtractor_ACCESS_KEY`
+- `Xtractor_SECRET_MESSAGE`
+- `Xtractor_SIGNATURE`
 - `S3_BUCKET` & `S3_TENANT_PURCHASERS` (for sync)
 
 ---
@@ -197,3 +197,5 @@ Under the MIT License, anyone who uses, copies, or modifies this code must inclu
 ---
 
 _For professional inquiries, connect on [LinkedIn](https://www.linkedin.com/in/gairik-singha/)._
+
+

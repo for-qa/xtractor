@@ -14,3 +14,5 @@ export interface EmailStoredConfig {
   senderEmail?: string;
   appPassword?: string;
 }
+
+

@@ -119,3 +119,5 @@ export class SyncBrandUseCase {
     return allResults;
   }
 }
+
+

@@ -195,3 +195,5 @@ function detectAnomalies(records: ExtractionRecord[], p95: number): Anomaly[] {
   }
   return anomalies;
 }
+
+

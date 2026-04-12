@@ -43,3 +43,5 @@ export function loadStaticAssets(root: string) {
   return { logo, smallLogo, favIcon };
 }
 
+
+

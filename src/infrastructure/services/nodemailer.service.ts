@@ -45,7 +45,7 @@ export class NodemailerService implements INotificationService {
 
     const displayRunId =
       runId.startsWith("RUN") || runId.startsWith("SKIP") ? `#${runId}` : runId;
-    const subject = `[Piperact] Extraction Failed-${displayRunId}`;
+    const subject = `[Xtractor] Extraction Failed-${displayRunId}`;
 
     const playwrightRows = failures
       .map(
@@ -72,7 +72,7 @@ export class NodemailerService implements INotificationService {
               <tbody>
                 <tr>
                   <td align="center" style="padding:30px 30px 0 30px;">
-                    <span style="display:block;font-size:20px;font-weight:700;color:#2D9B8A;margin-bottom:10px;letter-spacing:-0.5px;">Piperact</span>
+                    <span style="display:block;font-size:20px;font-weight:700;color:#2D9B8A;margin-bottom:10px;letter-spacing:-0.5px;">Xtractor</span>
                     <hr style="border:none;border-top:#e4e4e7 2px solid;width:100%;max-width:640px;margin:20px auto;">
                   </td>
                 </tr>
@@ -102,7 +102,7 @@ export class NodemailerService implements INotificationService {
                 </tr>
                 <tr>
                   <td align="center" style="padding:20px;font-size:12px;color:#888;">
-                    &copy; ${new Date().getFullYear()} Piperact. Open-source portfolio project.
+                    &copy; ${new Date().getFullYear()} Xtractor. Open-source portfolio project.
                   </td>
                 </tr>
               </tbody>
@@ -116,7 +116,7 @@ export class NodemailerService implements INotificationService {
 
     try {
       await transporter.sendMail({
-        from: `"Piperact" <${sender}>`,
+        from: `"Xtractor" <${sender}>`,
         to: recipient,
         subject,
         html,
@@ -126,3 +126,5 @@ export class NodemailerService implements INotificationService {
     }
   }
 }
+
+

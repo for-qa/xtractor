@@ -7,3 +7,5 @@ export interface IScheduleRepository {
   updateSchedule(schedule: Schedule): Promise<void>;
   deleteSchedule(id: string): Promise<void>;
 }
+
+

@@ -26,7 +26,7 @@ export interface WorkflowRequest {
   concurrency?: number;
   requestsPerSecond?: number;
   skipCompleted?: boolean;
-  /** Override the S3 bucket name. Defaults to "piperact-staging". */
+  /** Override the S3 bucket name. Defaults to "Xtractor-staging". */
   bucketName?: string;
 }
 
@@ -102,7 +102,7 @@ export class ExecuteWorkflowUseCase {
           const results = await this.syncBrand.execute({
             buckets: [
               {
-                bucket: request.bucketName ?? "piperact-staging",
+                bucket: request.bucketName ?? "Xtractor-staging",
                 prefix: `${pair.tenant}/`,
                 name: pair.tenant,
                 purchaser: pair.purchaser,
@@ -203,3 +203,5 @@ export class ExecuteWorkflowUseCase {
     }
   }
 }
+
+

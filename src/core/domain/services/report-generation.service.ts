@@ -6,3 +6,5 @@
 export interface IReportGenerationService {
   generate(runId: string): Promise<void>;
 }
+
+

@@ -171,3 +171,5 @@ describe("RunExtractionUseCase", () => {
     expect(mockLogger.close).toHaveBeenCalled();
   });
 });
+
+

@@ -151,7 +151,7 @@ export class DashboardController {
     });
 
     return PageLayout({
-      title: "Piperact",
+      title: "Xtractor",
       content: DashboardView.render({
         brands: brands,
         purchasers: allPurchasers,
@@ -172,3 +172,5 @@ export class DashboardController {
     });
   }
 }
+
+

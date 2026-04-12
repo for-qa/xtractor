@@ -508,7 +508,7 @@ export function buildSummary(metrics: RunMetrics): ExecutiveSummary {
   const end = new Date(metrics.finishedAt).getTime();
   const runDurationSeconds = (end - start) / 1000;
   return {
-    title: "Piperact Operation – Executive Summary",
+    title: "Xtractor Operation – Executive Summary",
     generatedAt: new Date().toISOString(),
     metrics,
     runDurationSeconds,
@@ -3046,3 +3046,5 @@ export async function writeReportsForRunId(
 ): Promise<void> {
   // NO LONGER WRITING FILES
 }
+
+

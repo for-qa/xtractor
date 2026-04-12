@@ -21,3 +21,5 @@ export class SqliteLogger implements ILogger {
     // No specific stream to close
   }
 }
+
+

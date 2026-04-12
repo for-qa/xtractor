@@ -6,3 +6,5 @@ export interface ILogger {
   log(entry: LogEntry): void;
   close(): void;
 }
+
+

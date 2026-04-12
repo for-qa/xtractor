@@ -3,3 +3,5 @@
 // via SqliteExtractionRecordRepository.appendScheduleLog() / getScheduleLogs().
 
 export const SCHEDULE_LOG_MAX_ENTRIES = 500;
+
+

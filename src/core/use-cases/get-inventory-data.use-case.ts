@@ -109,3 +109,5 @@ export class GetInventoryDataUseCase {
     return list;
   }
 }
+
+

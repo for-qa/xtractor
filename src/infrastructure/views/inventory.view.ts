@@ -240,3 +240,5 @@ export class InventoryView {
     return InventoryBody(props);
   }
 }
+
+

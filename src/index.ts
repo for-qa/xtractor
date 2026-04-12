@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Piperact Runner – CLI
+ * Xtractor Runner – CLI
  * Commands: sync | run | sync-extract | report
  */
 
@@ -19,7 +19,7 @@ import {
   RunExtractionRequest,
 } from "./core/use-cases/run-extraction.use-case.js";
 import { AwsS3Service } from "./infrastructure/services/aws-s3.service.js";
-import { PiperactService } from "./infrastructure/services/piperact.service.js";
+import { XtractorService } from "./infrastructure/services/xtractor.service.js";
 import { SqliteLogger } from "./infrastructure/services/sqlite-logger.service.js";
 import { DiscoverFilesUseCase } from "./core/use-cases/discover-files.use-case.js";
 import { NodemailerEmailService } from "./infrastructure/services/nodemailer-email.service.js";
@@ -104,8 +104,8 @@ const stdoutPiped = !process.stdout.isTTY;
 // ─── sync ─────────────────────────────────────────────────────────────────────
 
 program
-  .name("piperact")
-  .description("Piperact CLI - Clean Architecture Edition")
+  .name("Xtractor")
+  .description("Xtractor CLI - Clean Architecture Edition")
   .option("-c, --config <path>", "Config file path", getConfigPath());
 
 program
@@ -264,7 +264,7 @@ program
       const syncRepo = new SqliteSyncRepository(config.run.databasePath);
       const emailService = new NodemailerEmailService(recordRepo);
       const logger = new SqliteLogger(recordRepo);
-      const extractionService = new PiperactService(
+      const extractionService = new XtractorService(
         config,
         EXTRACTIONS_DIR,
       );
@@ -507,7 +507,7 @@ program
       const syncRepo = new SqliteSyncRepository(config.run.databasePath);
       const emailService = new NodemailerEmailService(recordRepo);
       const logger = new SqliteLogger(recordRepo);
-      const extractionService = new PiperactService(
+      const extractionService = new XtractorService(
         config,
         EXTRACTIONS_DIR,
       );
@@ -767,3 +767,6 @@ program
   });
 
 program.parse(process.argv);
+
+
+
