@@ -1,10 +1,10 @@
 # Xtractor Runner - Configuration (example)
 # 1. Copy this file to config.yaml:  cp config.example.yaml config.yaml
-# 2. Set environment variables (see .env.example or README): Xtractor_BASE_URL, etc.
+# 2. Set environment variables (see .env.example or README): XTRACTOR_BASE_URL, etc.
 # 3. Edit buckets / paths below if needed.
 
 api:
-  baseUrl: ${Xtractor_BASE_URL}
+  baseUrl: ${XTRACTOR_BASE_URL}
   timeoutMs: 60000
 
 # S3: buckets are built from .env S3_BUCKET + S3_TENANT_PURCHASERS (single bucket, tenant/purchaser folders).
@@ -45,5 +45,6 @@ report:
   # Optional: keep only the last N report sets (each run = one .html + one .json).
   # Older reports are deleted after each write to maintain a clean workspace.
   # retainCount: 10
+
 
 

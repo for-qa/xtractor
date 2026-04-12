@@ -415,3 +415,4 @@ window.formatBrandName = AppUtils.formatBrandName;
 window.formatPurchaserName = AppUtils.formatPurchaserName;
 
 
+

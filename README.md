@@ -107,9 +107,9 @@ cp config/config.example.yaml config/config.yaml
 
 Edit `.env` with your API credentials:
 
-- `Xtractor_ACCESS_KEY`
-- `Xtractor_SECRET_MESSAGE`
-- `Xtractor_SIGNATURE`
+- `XTRACTOR_ACCESS_KEY`
+- `XTRACTOR_SECRET_MESSAGE`
+- `XTRACTOR_SIGNATURE`
 - `S3_BUCKET` & `S3_TENANT_PURCHASERS` (for sync)
 
 ---
@@ -197,5 +197,6 @@ Under the MIT License, anyone who uses, copies, or modifies this code must inclu
 ---
 
 _For professional inquiries, connect on [LinkedIn](https://www.linkedin.com/in/gairik-singha/)._
+
 
 

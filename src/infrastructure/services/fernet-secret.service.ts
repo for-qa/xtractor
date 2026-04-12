@@ -3,12 +3,12 @@ import { Fernet } from "fernet-nodejs";
 export class FernetSecretService {
   private static decryptionAttempted = false;
   private static readonly ENCRYPTED_VARS: [string, string][] = [
-    ["Xtractor_ACCESS_KEY_ENCRYPTED", "Xtractor_ACCESS_KEY"],
+    ["XTRACTOR_ACCESS_KEY_ENCRYPTED", "XTRACTOR_ACCESS_KEY"],
     [
-      "Xtractor_SECRET_MESSAGE_ENCRYPTED",
-      "Xtractor_SECRET_MESSAGE",
+      "XTRACTOR_SECRET_MESSAGE_ENCRYPTED",
+      "XTRACTOR_SECRET_MESSAGE",
     ],
-    ["Xtractor_SIGNATURE_ENCRYPTED", "Xtractor_SIGNATURE"],
+    ["XTRACTOR_SIGNATURE_ENCRYPTED", "XTRACTOR_SIGNATURE"],
     ["AWS_ACCESS_KEY_ID_ENCRYPTED", "AWS_ACCESS_KEY_ID"],
     ["AWS_SECRET_ACCESS_KEY_ENCRYPTED", "AWS_SECRET_ACCESS_KEY"],
   ];
@@ -34,5 +34,6 @@ export class FernetSecretService {
     } catch (_) {}
   }
 }
+
 
 
