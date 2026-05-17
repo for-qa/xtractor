@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build outputs
+dist/
+out/
+build/
+tsconfig.tsbuildinfo
+
+# Local configuration and credentials
+.env
+.env.local
+.env.production
+config/config.yaml
+
+# Data/Runtime folders (very important to ignore since we use persistent volumes)
+output/
+
+# Tests & IDE configurations
+tests/
+.idea/
+.vscode/
+.git/
+.github/
+*.log
+*.sqlite
